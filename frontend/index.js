@@ -7,7 +7,11 @@ async function loadCompanyValues() {
         valuesList.innerHTML = "";
         values.forEach(value => {
             const li = document.createElement("li");
-            li.textContent = value;
+            if (value.includes("Josh")) {
+                li.innerHTML = `${value} <i class="fas fa-star cool-icon" aria-hidden="true"></i>`;
+            } else {
+                li.textContent = value;
+            }
             valuesList.appendChild(li);
         });
     } catch (error) {

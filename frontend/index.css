@@ -38,3 +38,8 @@ ul {
 #valuesList li {
     margin-bottom: 0.5rem;
 }
+
+.cool-icon {
+    color: #ffd700;
+    margin-left: 5px;
+}
