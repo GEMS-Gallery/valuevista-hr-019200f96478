@@ -5,14 +5,9 @@ async function loadCompanyValues() {
         const values = await backend.getValues();
         const valuesList = document.getElementById("valuesList");
         valuesList.innerHTML = "";
-        values.forEach((value, index) => {
+        values.forEach((value) => {
             const li = document.createElement("li");
-            if (value.includes("Josh")) {
-                li.innerHTML = `<span class="primary-value">${value}</span> <i class="fas fa-star cool-icon" aria-hidden="true"></i>`;
-                li.classList.add("primary-value");
-            } else {
-                li.textContent = value;
-            }
+            li.textContent = value;
             valuesList.appendChild(li);
         });
     } catch (error) {

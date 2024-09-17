@@ -5,8 +5,7 @@ import Text "mo:base/Text";
 
 actor {
   // Stable variable to store company values
-  // "Josh is the best" is set as the first and primary value
-  stable var companyValues : [Text] = ["Josh is the best"];
+  stable var companyValues : [Text] = [];
 
   // Function to add a new company value
   public func addValue(value : Text) : async () {

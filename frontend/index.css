@@ -44,8 +44,9 @@ ul {
     margin-left: 5px;
 }
 
-.primary-value {
+#josh-value {
     font-weight: bold;
     font-size: 1.2em;
     color: #4a90e2;
+    margin-bottom: 1rem;
 }
