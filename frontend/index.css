@@ -43,3 +43,9 @@ ul {
     color: #ffd700;
     margin-left: 5px;
 }
+
+.primary-value {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #4a90e2;
+}
